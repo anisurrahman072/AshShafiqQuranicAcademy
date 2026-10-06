@@ -61,11 +61,21 @@ export const rootMetadata: Metadata = {
     title: titleDefault,
     description,
     countryName: "Bangladesh",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: `${site.name} — ${site.tagline}`,
+        type: "image/png",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: titleDefault,
     description,
+    images: ["/twitter-image.png"],
   },
   alternates: { canonical: url },
   robots: {
